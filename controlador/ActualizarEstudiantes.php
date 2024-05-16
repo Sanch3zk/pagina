@@ -50,7 +50,7 @@ include("bd.php");
     if($Resultado ==FALSE) { $Mensaje="No se pudo actualizar el estudiante";
                      //die($mysqli_error($Conexion));  
                 }
-    else { $Mensaje="El estudiante se actiualizo correctamente"; 
+    else { $Mensaje="El estudiante se nbo se actualizo  correctamente"; 
       //echo $Consulta;   
       header('location: Estudiantes.php');
 

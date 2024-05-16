@@ -29,8 +29,9 @@ try{
         <tr>
            <td>'.$Registro["CodigoEspecialidad"].'</td>
            <td>'.$Registro["NombreEspecialidad"].'</td>
-           <td>Editar</td>
-           <td>ELIMINAR</td>
+           <td><a href="ActualizacionEstudiantes.php?CodigoEspecialidad='.$Registro["CodigoEspecialidad"].'">Editar</a></td>
+           <td><a href="#" onclick="Preguntar('.$Registro["CodigoEspecialidad"].')">ELIMINAR</a></td>
+          
           
          </tr>';
      
@@ -41,3 +42,13 @@ try{
  
 
 ?>
+
+<script type= "text/javascript">
+ function Preguntar(CodigoEspecialidad)
+ {
+   if(confirm("¿esta seguro de eliminar la especialidad?"+CodigoEspecialidad+"?"))
+   {
+     window.location.href = "especialidades.php? CodigoEspecialidad="+CodigoEspecialidad;
+   }
+ }
+  </script>

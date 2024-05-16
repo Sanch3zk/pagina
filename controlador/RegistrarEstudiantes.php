@@ -1,5 +1,5 @@
 <?php
-if (!empty($_POST["CodigoEstudiante"]) && !empty($_POST["PrimerNombre"]) && !empty($_POST["PrimerApellido"]) && !empty($_POST["Curso"]) && !empty($_POST["EspecialidadEstudiante"]) && !empty($_POST["ProyectoEstudiantes"])){
+if (!empty($_POST["CodigoEstudiante"]) && !empty($_POST["PrimerNombre"]) && !empty($_POST["PrimerApellido"]) && !empty($_POST["Curso"]) && !empty($_POST["EspecialidadEstudiante"]) && !empty($_POST["EstudianteProyecto"])){
     $CodigoEstudiante = $_POST["CodigoEstudiante"];
     $PrimerNombre = $_POST["PrimerNombre"];
     $SegundoNombre = $_POST["SegundoNombre"];
@@ -7,7 +7,7 @@ if (!empty($_POST["CodigoEstudiante"]) && !empty($_POST["PrimerNombre"]) && !emp
     $SegundoApellido = $_POST["SegundoApellido"];
     $Curso = $_POST["Curso"];
     $Especialidad = $_POST["EspecialidadEstudiante"];
-    $Proyecto = $_POST["ProyectoEstudiantes"];
+    $Proyecto = $_POST["EstudianteProyecto"];
     $FechaNacimiento = $_POST["FechaNacimiento"];
                                
     include("bd.php");                              
